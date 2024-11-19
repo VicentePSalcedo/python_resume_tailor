@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
 import cloudscraper
 
-def get_job_description_from_indeed(url):
-    scraper = cloudscraper.create_scraper()
+scraper = cloudscraper.create_scraper()
+
+def get_job_description_from_indeed(url) -> str:
     response = scraper.get(url)
 
     if response.status_code!=200:
@@ -13,3 +14,6 @@ def get_job_description_from_indeed(url):
         job_description = soup.find('div', id="jobDescription")
         print("Finished scraping job description")
         return job_description.text
+
+def get_full_site_text(url) -> str:
+    response = scraper.get(url)

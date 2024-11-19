@@ -6,11 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {
-    nixpkgs,
-    flake-utils,
-    ...
-  }:
+  outputs = { nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
@@ -19,12 +15,14 @@
         pippkgs = pkgs.python312Packages;
 
         nativeBuildInputs = with pkgs; [
-          pippkgs.beautifulsoup4
           pippkgs.cloudscraper
+          pippkgs.beautifulsoup4
           pippkgs.google-generativeai
+          pippkgs.jedi-language-server
+          pippkgs.python-dotenv
           pippkgs.requests
-          python
           pyright
+          python
         ];
 
         buildInputs = with pkgs; [];

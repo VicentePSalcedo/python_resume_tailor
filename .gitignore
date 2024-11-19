@@ -6,3 +6,4 @@ result*
 src/__pycache__/
 Resume.pdf
 resume.txt
+.env
