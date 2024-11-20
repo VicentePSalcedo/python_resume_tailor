@@ -1,0 +1,2 @@
+- remove heading from cover letter
+- set up formating function for cover letter, think [...] replaced with 'valid example'

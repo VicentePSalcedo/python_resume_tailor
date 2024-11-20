@@ -15,10 +15,11 @@
         pippkgs = pkgs.python312Packages;
 
         nativeBuildInputs = with pkgs; [
-          pippkgs.cloudscraper
           pippkgs.beautifulsoup4
+          pippkgs.cloudscraper
           pippkgs.google-generativeai
           pippkgs.jedi-language-server
+          pippkgs.python-docx
           pippkgs.python-dotenv
           pippkgs.requests
           pyright
