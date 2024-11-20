@@ -17,7 +17,7 @@ summary: str = lib.extract_simple_section("Summary", formatted_resume)
 experience: str = lib.extract_experience(formatted_resume)
 projects: str = lib.extract_simple_section("Projects", formatted_resume)
 skills: str = lib.extract_simple_section("Skills", formatted_resume)
-doc_path: str = 'resume template.docx'
+doc_path: str = 'resume_template.docx'
 data: object = {
     'summary': summary,
     'experience': experience,

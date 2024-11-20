@@ -7,3 +7,5 @@ src/__pycache__/
 Resume.pdf
 resume.txt
 .env
+output_resume.docx
+resume_template.docx
