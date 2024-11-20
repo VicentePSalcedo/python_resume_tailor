@@ -1,2 +1,9 @@
 - remove heading from cover letter
-- set up formating function for cover letter, think [...] replaced with 'valid example'
+- set up formatting function for cover letter, think [...] replaced with 'valid example'
+- setup unit testing to speed along development
+- decide on a front end
+- decide on a back end
+- rewrite it in rust? (probs not)
+- use a local agent to decrease response time?
+- how might this scale
+- best way to secure access
